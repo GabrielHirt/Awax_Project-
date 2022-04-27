@@ -1,0 +1,691 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: "montserrat", Arial, Helvetica, sans-serif;
+overflow-x: hidden;
+}
+
+header{
+    background: black;
+    height: 100px;
+}
+
+.header{
+    max-width: 1140px;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    margin: auto;
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    border: solid 1px red;
+ 
+
+}
+
+
+
+
+.logoimg{
+    width: 80px;
+    height: 80px;
+    background: #b28756;
+    border-radius: 50%;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    border: solid 1px red;
+    
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+
+}
+.menu ul{
+    display: flex;
+    
+ 
+}
+
+.menu li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    border-bottom: 5px solid black;
+
+}
+
+.menu li  a:hover{
+    border-bottom: solid 5px #b28756;
+    color: rgb(223, 223, 223);
+
+}
+
+.menu .active a{
+    border-bottom: 5px solid #b28756;
+}
+
+
+.up{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.banner{
+    height:calc(100vh - 100px);
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner #sliders{
+    height: 100%;
+    width: 1000vw;
+}
+
+.banner .slide{
+    width: 100vw;
+    height: 100%;  
+    display: inline-block;  
+    background-color: rgba(0, 0, 0, 0.658);
+
+}
+
+
+.banner .slide-Dois{
+    width: 100vw;
+    height: 100%;  
+    display: inline-block;  
+    background-color: rgba(0, 0, 0, 0.658);
+
+}
+
+
+.banner .slidearea {
+    display: flex;
+    height: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px red;
+
+}
+
+
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    border: solid 1px red;
+}
+
+.banner h1 span{
+    color: rgba(255, 166, 0, 0.671);
+    border: solid 1px red;
+}
+
+
+.banner h2{
+    display: flex;
+    color: aliceblue;
+    margin-top: 20px;
+    border: solid 1px red;
+    
+}
+
+.banner a{
+    padding: 10px 30px;
+    height: auto;
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+    background: rgba(255, 166, 0, 0.507);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+
+} 
+
+.banner .slider-pointer{
+    width: 100vw;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.banner .slider-pointer .pointer{
+    height: 15px;
+    width: 15px;
+    border-radius: 8px;
+    background: rgba(201, 131, 0, 0);
+    margin: 5px;
+    border: solid 2px rgba(255, 166, 0, 0.678);
+    cursor: pointer;
+}
+
+.banner .slider-pointer #pointer-Dois{
+    height: 15px;
+    width: 15px;
+    border-radius: 8px;
+    background: rgba(201, 131, 0, 0);
+    margin: 5px;
+    border: solid 2px rgba(255, 166, 0, 0.678);
+    cursor: pointer;
+}
+
+.banner .slider-pointer #pointer-Three{
+    height: 15px;
+    width: 15px;
+    border-radius: 8px;
+    background: rgba(201, 131, 0, 0);
+    margin: 5px;
+    border: solid 2px rgba(255, 166, 0, 0.678);
+    cursor: pointer;
+}
+
+
+.banner .slider-pointer #pointer-One{
+    height: 15px;
+    width: 15px;
+    border-radius: 8px;
+    background: rgba(201, 131, 0, 0);
+    margin: 5px;
+    border: solid 2px rgba(255, 166, 0, 0.315);
+    background: rgba(255, 166, 0, 0.603);
+    cursor: pointer;
+}
+
+
+/* ==========================(PADRÃO DAS SECTIONS)=============================*/
+
+
+.default{
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}
+
+.default .section-title,
+.default .section-desc   {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: auto;
+}
+
+.default .section-title{
+    font-size: 40px;
+    border:solid 1px red;
+ 
+
+}
+
+.default .section-desc {
+    font-size: 20px;
+    color: rgb(145, 143, 143);
+    margin-top: 10px;
+    margin-bottom: 40px;;
+    border:solid 1px red;
+
+}
+
+.default .section-body{
+    margin: auto; /*Deixa a section ao meio*/
+    max-width: 1140px;
+    background: white;
+    min-height: 100px;
+    border:solid 1px red;
+
+}
+
+
+/*============= END =============================*/
+
+
+.default.light{
+    background: white;
+    color: black;
+ 
+}
+
+.default.dark{
+    background-color: #000000;
+ 
+}
+
+
+/*==========================ABOUT US===========================*/
+
+.default.dark .section-title{
+    color: aliceblue;
+ 
+}
+
+.section-body{
+    display: flex;
+    padding: 0px 80px 40px 80px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.txt{
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    padding-right: 20px;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center; 
+    font-size: 14px; 
+    flex-wrap: wrap;
+ 
+}
+
+.txt a{
+    align-self:flex-start;
+    display: flex;
+    width: auto;
+    background: rgba(223, 145, 1, 0.507);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.txt a:hover{
+    color: rgb(143, 105, 0);
+}
+
+.txt p{
+    line-height: 25px;
+}
+.imgPlay{
+    display: flex;
+    flex: 1;
+    height: 200px;
+    width: 100%;
+    background: rgba(255, 166, 0, 0.507);
+    flex-wrap: wrap;
+    
+    background-image: url(img/playScreen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    overflow: hidden;
+    cursor: pointer;
+    
+    
+    box-shadow: 0px 5px 10px black;
+    
+}
+
+
+/*=======================SERVICES===================================*/
+
+.section-services{
+    display: flex;
+    
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.section-service{
+    display: flex;
+    
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: solid 2px #333;
+    
+}
+
+.section-service:first-child{
+    border-left: 1px solid #333;
+}
+
+
+
+.section-service h2{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    max-width: 150px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.section-service h3{
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(138, 138, 138);
+
+ 
+}
+
+.section-body.dark{
+    background-color: black;
+}
+
+
+
+/*=======================END SERVICES===================================*/
+
+
+.section-works{
+    background: white;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+  
+    
+}
+
+.section-works .section-service img{
+    display: flex;
+    flex: 1;
+    height: 200px;
+    width: 100%;
+    background: rgba(255, 166, 0, 0.507);
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.section-works .section-service{
+    margin: 10px;
+    border: none;
+}
+
+
+.section-body-works{   
+    padding: 0px 80px 40px 80px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    
+      
+}
+
+.section-btn-works{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.section-btn-works a{
+
+    align-self: flex-start;
+    display: flex;
+    width: auto;
+    background: rgba(255, 166, 0, 0.507);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.menu-works nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(212, 212, 212);
+    border: solid 1px rgb(180, 180, 180);
+    padding: 15px;
+    border-radius: 18px;
+    border-bottom: solid 5px rgb(180, 180, 180);
+
+   
+
+}
+.menu-works nav ul li{
+    list-style: none;
+} 
+
+
+.menu-works nav ul li a {
+    margin-left: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border-left: solid 1px grey;
+    text-transform: uppercase;
+
+    align-self: center;
+    
+}
+
+.menu-works .on{
+    border-left: none;
+}
+
+.menu-works nav ul li a:hover{
+    border-bottom: solid 5px rgba(255, 166, 0, 0.74);
+    color: #b28756;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 756px){
+    .banner h1{
+
+        font-size: 30px;
+    }
+    .section-body.dark{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .section-services{
+        display: inline-block;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        min-width: 100%;
+       
+    }
+   
+    h3{
+        margin-bottom: 30px;
+    }
+
+    img{
+        margin-top: 30px;
+    }
+    .section-service{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex: 1;
+
+        border-top: solid 2px #333;
+        border-bottom: solid 2px #333;
+        border-right: solid 2px rgb(0, 0, 0);
+        border-left: solid 2px rgb(0, 0, 0);
+
+    }
+    .section-service:first-child{
+        border-left: 1px solid rgb(0, 0, 0);
+    }
+    
+
+    .header {
+        display: none;
+    }
+
+    .section-body{
+        display: inline-block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      
+        
+    }
+
+    .txt a{
+        align-self:flex-start;
+        display: flex;
+        width: auto;
+        background: rgba(255, 166, 0, 0.507);
+        padding: 5px;
+        margin-top: 20px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 600; 
+        text-align: center;  
+    }
+
+
+    .imgPlay{
+        display: flex;
+        flex: 1;
+        height: 200px;
+        width: 100%;
+        background: rgba(255, 166, 0, 0.507);
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        background-image: url(../img/playScreen.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        overflow: hidden;
+       
+        
+    }
+
+
+
+}
+
+
+@media (max-width: 450px){
+    
+    .section-body{
+        display: inline-block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;   
+        
+        
+    }
+    
+    .txt{
+        display: flex;
+        justify-content: space-between;
+        flex: 2;
+        padding-right: 20px;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;  
+        width: auto; 
+        flex-wrap: wrap;
+    }
+
+    .txt a{
+        align-self:flex-start;
+        display: flex;
+        width: 100px;
+        background: rgba(255, 166, 0, 0.507);
+        padding: 5px;
+        margin-top: 20px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 600;
+        
+    
+    }
+
+
+    .imgPlay{
+        display: flex;
+        flex: 1;
+        height: 200px;
+        width: 100%;
+        background: rgba(255, 166, 0, 0.507);
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        background-image: url(../img/playScreen.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        overflow: hidden;
+        
+    }
+}
